@@ -1,0 +1,26 @@
+# The inputs of the next release. Change one and the release's bytes change, so bump the version.
+
+name = "ac1999-launch-world"
+version = "0.1.0-alpha.1"
+era = "launch"
+target = "launch"
+
+[source]
+url = "https://gitlab.com/adamplumb/ac1999.git"
+revision = "5fe910e7a3e549d955117920a1bd30b4ee646938"
+
+[converter]
+url = "https://github.com/dereth-network/dereth"
+commit = "4b30bfacbe28101bad909fba3b803deb1eef9eb5"
+cargo_lock_sha256 = "4ca5f186457e07ecad2a918eb91c8062c40798e6a47466843732debd28467f4c"
+toolchain = "rustc 1.98.1"
+
+[dats.portal]
+capture = "1999-10-31"
+iteration = 105
+sha256 = "778f8d927d4fb82fc69bf03e06576a04fff3529d610a08debc0b863abddf80ff"
+
+[dats.cell]
+capture = "1999-10-09"
+iteration = 67
+sha256 = "111855655c7b1daec563a96476e29cf10f17a8252a50f6102f1245146e0870b8"
