@@ -17,14 +17,20 @@ the changes it makes are ours; the world is theirs. See [NOTICE](NOTICE) and [PR
 
 ## Using a release
 
-Each release has two files:
+The server's importer fetches the newest release, checks its SHA-256 and writes its `world.pack`:
+
+```text
+empyrean-import fetch --world ac1999 --pack --out world.pack
+```
+
+The Dereth Network launcher does the same when you host a Launch world. Each release has two files:
 
 | File | What |
 |---|---|
 | `ac1999-launch-world-<commit>.zip` | `world.pack`, the ACE-schema `world.sql`, the Empyrean extension `empyrean.sql`, the manifest and the change ledgers |
 | `ac1999-launch-world-<commit>-source.zip` | The exact ac1999 files it was built from, with their SHA-256s |
 
-Unzip the world and point the server at it:
+Point the server at the pack:
 
 ```toml
 [server]
@@ -41,18 +47,30 @@ Point Dereth at the same `portal.dat` and `cell.dat`.
 With the pinned converter (`release.toml`) built, either fetch the source:
 
 ```text
-empyrean-import ac1999 --revision 5fe910e7a3e549d955117920a1bd30b4ee646938 --allow-incomplete --out <new-directory>
+empyrean-import ac1999 --revision 80adf514364387ec3890e0c5faa4172548542db5 --allow-incomplete --out <new-directory>
 ```
 
 or rebuild from a release's source ZIP, offline:
 
 ```text
-empyrean-import ac1999 --revision 5fe910e7a3e549d955117920a1bd30b4ee646938 --source ac1999-launch-world-5fe910e7-source.zip --allow-incomplete --out <new-directory>
+empyrean-import ac1999 --revision 80adf514364387ec3890e0c5faa4172548542db5 --source ac1999-launch-world-80adf514-source.zip --allow-incomplete --out <new-directory>
 empyrean-import ac1999 package --bundle <new-directory> --out <release-directory>
 ```
 
 The same inputs give the same bytes: compare your `SHA256SUMS` with the release's, kept in
 [`releases/`](releases/).
+
+## Following ac1999
+
+ac1999 decides what this world holds. The conversion changes only what the 1999 files and the formats force
+([PROVENANCE.md](PROVENANCE.md)), so a new ac1999 commit is normally a new world.
+
+Any commit can be tried, with the command above or with the **Try an ac1999 commit** workflow, which converts
+it and reports what changed or why it was refused. A row the conversion reviewed that has since changed
+upstream refuses the conversion until someone reviews it again.
+
+Making a release stays a person's decision, and no workflow does it. They bump `release.toml`, run
+`ac1999 package`, check the world against the 1999 files, play it, and publish.
 
 ## Status
 

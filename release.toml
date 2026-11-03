@@ -1,18 +1,19 @@
 # The inputs of the next release. Change one and the release's bytes change, so bump the version.
 
 name = "ac1999-launch-world"
-version = "0.1.0-alpha.1"
+version = "0.1.0"
 era = "launch"
 target = "launch"
 
 [source]
 url = "https://gitlab.com/adamplumb/ac1999.git"
-revision = "5fe910e7a3e549d955117920a1bd30b4ee646938"
+revision = "80adf514364387ec3890e0c5faa4172548542db5"
 
 [converter]
 url = "https://github.com/dereth-network/dereth"
-commit = "4b30bfacbe28101bad909fba3b803deb1eef9eb5"
-cargo_lock_sha256 = "4ca5f186457e07ecad2a918eb91c8062c40798e6a47466843732debd28467f4c"
+# Set both once the converter this release needs is on dereth's main.
+commit = ""
+cargo_lock_sha256 = ""
 toolchain = "rustc 1.98.1"
 
 [dats.portal]

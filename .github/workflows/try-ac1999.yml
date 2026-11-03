@@ -1,0 +1,73 @@
+# Converts one ac1999 commit with this repository's pinned converter and reports what changed or why it
+# was refused. It never packages, tags or publishes: a release is a person's decision.
+name: Try an ac1999 commit
+
+on:
+  workflow_dispatch:
+    inputs:
+      revision:
+        description: The full 40-character ac1999 commit
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read the pinned converter
+        id: pin
+        env:
+          REVISION: ${{ inputs.revision }}
+        run: |
+          python3 - <<'EOF'
+          import os, re, sys, tomllib
+          if not re.fullmatch(r"[0-9a-f]{40}", os.environ["REVISION"]):
+              sys.exit("revision must be a full 40-character commit")
+          converter = tomllib.load(open("release.toml", "rb"))["converter"]
+          if not converter["commit"]:
+              sys.exit("release.toml pins no converter yet")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as out:
+              out.write(f"commit={converter['commit']}\n")
+              out.write(f"toolchain={converter['toolchain'].split()[1]}\n")
+          EOF
+
+      - uses: actions/checkout@v4
+        with:
+          repository: dereth-network/dereth
+          ref: ${{ steps.pin.outputs.commit }}
+          path: converter
+
+      - name: Build the converter
+        env:
+          TOOLCHAIN: ${{ steps.pin.outputs.toolchain }}
+        working-directory: converter
+        run: |
+          rustup toolchain install "$TOOLCHAIN" --profile minimal
+          cargo "+$TOOLCHAIN" build --release --locked -p empyrean-import
+
+      - name: Convert
+        env:
+          REVISION: ${{ inputs.revision }}
+        shell: bash
+        run: |
+          converter/target/release/empyrean-import ac1999 --revision "$REVISION" --allow-incomplete --out bundle 2>&1 | tee convert.log
+
+      - name: Report
+        if: always()
+        env:
+          REVISION: ${{ inputs.revision }}
+        run: python3 .github/workflows/try-ac1999-report.py >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: ac1999-conversion
+          path: |
+            bundle/manifest.json
+            bundle/changes.json
+            bundle/empyrean-changes.json
