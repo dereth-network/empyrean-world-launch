@@ -1,4 +1,4 @@
-# Empyrean world base: 1999
+# Empyrean world: Launch
 
 The world of Asheron's Call as it launched in November 1999, for [Empyrean](https://github.com/dereth-network/dereth)
 to serve on its Launch era and [Dereth](https://github.com/dereth-network/dereth) to play.
@@ -20,15 +20,15 @@ the changes it makes are ours; the world is theirs. See [NOTICE](NOTICE) and [PR
 The server's importer fetches the newest release, checks its SHA-256 and writes its `world.pack`:
 
 ```text
-empyrean-import fetch --world ac1999 --pack --out world.pack
+empyrean-import fetch --era launch --pack --out world.pack
 ```
 
 The Dereth Network launcher does the same when you host a Launch world. Each release has two files:
 
 | File | What |
 |---|---|
-| `ac1999-launch-world-<commit>.zip` | `world.pack`, the ACE-schema `world.sql`, the Empyrean extension `empyrean.sql`, the manifest and the change ledgers |
-| `ac1999-launch-world-<commit>-source.zip` | The exact ac1999 files it was built from, with their SHA-256s |
+| `empyrean-world-launch-<commit>.zip` | `world.pack`, the ACE-schema `world.sql`, the Empyrean extension `empyrean.sql`, the manifest and the change ledgers |
+| `empyrean-world-launch-<commit>-source.zip` | The exact ac1999 files it was built from, with their SHA-256s |
 
 Point the server at the pack:
 
@@ -53,7 +53,7 @@ empyrean-import ac1999 --revision 80adf514364387ec3890e0c5faa4172548542db5 --all
 or rebuild from a release's source ZIP, offline:
 
 ```text
-empyrean-import ac1999 --revision 80adf514364387ec3890e0c5faa4172548542db5 --source ac1999-launch-world-80adf514-source.zip --allow-incomplete --out <new-directory>
+empyrean-import ac1999 --revision 80adf514364387ec3890e0c5faa4172548542db5 --source empyrean-world-launch-80adf514-source.zip --allow-incomplete --out <new-directory>
 empyrean-import ac1999 package --bundle <new-directory> --out <release-directory>
 ```
 

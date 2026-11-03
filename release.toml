@@ -1,6 +1,6 @@
 # The inputs of the next release. Change one and the release's bytes change, so bump the version.
 
-name = "ac1999-launch-world"
+name = "empyrean-world-launch"
 version = "0.1.0"
 era = "launch"
 target = "launch"
