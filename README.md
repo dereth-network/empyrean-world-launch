@@ -40,7 +40,8 @@ dat_files_directory = "<the folder holding portal.dat and cell.dat>"
 profile = "launch"
 ```
 
-Point Dereth at the same `portal.dat` and `cell.dat`.
+Dereth plays them beside a modern install's `client_*.dat` files, which draw its interface:
+`--dat-dir <modern folder> --classic-dat-dir <1999 folder>`. The launcher does this for you.
 
 ## Building it yourself
 
