@@ -11,10 +11,9 @@ revision = "80adf514364387ec3890e0c5faa4172548542db5"
 
 [converter]
 url = "https://github.com/dereth-network/dereth"
-# Set both once the converter this release needs is on dereth's main.
-commit = ""
-cargo_lock_sha256 = ""
-toolchain = "rustc 1.98.1"
+commit = "cd2eecd6c7b240419108f60428dc589874dc069d"
+cargo_lock_sha256 = "731d0490eab7f54cb6efa98a4e5cfba893b1c80f9ddbbfee7494de47feab317b"
+toolchain = "rustc 1.98.0 (88d9e12ae 2026-08-18)"
 
 [dats.portal]
 capture = "1999-10-31"
