@@ -27,6 +27,18 @@ launch. Most rows pass through as ac1999 wrote them. The rest are what the files
 Every model, picture, palette, sound and effect that something placed, generated, created, given, crafted,
 looted or started with can reach is present in the two 1999 files.
 
+## Releases
+
+| Release | ac1999 commit | Converter commit | `world.pack` SHA-256 |
+|---|---|---|---|
+| 0.1.0 | `80adf514` | `cd2eecd6c` | `b7316cba19d3a7e2fd8365a0f1b421525ecbf10f879cab6e25c0d994ccff5195` |
+| 0.2.0 | `e4eb0378` | `db116d575` | `29cd02c921cf2aebc13e6ddaa2ef82718c65eed106ee6ac90b1abc309a9e6902` |
+
+The conversion made the same changes for both, in the same counts. What differs between them is ac1999's:
+its commits `e89544d6` (Lich's Place) and `a7c2bd76` (Shadows off the landscape). 0.2.0 no longer holds the
+eleven generator classes those removed: 6050, 6054, 22733, 22736, 25908, 61052, 61064, 61476, 61477, 61478
+and 61517.
+
 ## Credit
 
 ac1999 is the work of Adam Plumb and its contributors, building on Seedsow, ClassicDereth, GDL and GDLE,
