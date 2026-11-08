@@ -1,5 +1,9 @@
 # Changes
 
+## 0.3.0 (2026-11-08)
+
+- Follows ac1999 to `3c564fdf`: doors carry their heritage names again, such as "Aluvian-Door".
+
 ## 0.2.0 (2026-11-06)
 
 - Follows ac1999 to `e4eb0378`: Lich's Place is restored, and Shadows leave the general landscape.

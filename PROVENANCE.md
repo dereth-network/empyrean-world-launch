@@ -33,11 +33,15 @@ looted or started with can reach is present in the two 1999 files.
 |---|---|---|---|
 | 0.1.0 | `80adf514` | `cd2eecd6c` | `b7316cba19d3a7e2fd8365a0f1b421525ecbf10f879cab6e25c0d994ccff5195` |
 | 0.2.0 | `e4eb0378` | `db116d575` | `29cd02c921cf2aebc13e6ddaa2ef82718c65eed106ee6ac90b1abc309a9e6902` |
+| 0.3.0 | `3c564fdf` | `5ffc4b620` | `797412f688bb63fbae3c198febe3bdadacf052d7f6ae5a6abe686377bdd547ae` |
 
-The conversion made the same changes for both, in the same counts. What differs between them is ac1999's:
+The conversion made the same changes for each, in the same counts. What differs between them is ac1999's:
 its commits `e89544d6` (Lich's Place) and `a7c2bd76` (Shadows off the landscape). 0.2.0 no longer holds the
 eleven generator classes those removed: 6050, 6054, 22733, 22736, 25908, 61052, 61064, 61476, 61477, 61478
 and 61517.
+
+0.3.0 differs from 0.2.0 only by ac1999's `8a570d06`: 28 door weenies take their heritage names again
+("Aluvian-Door", "Sho-Door", "Gharun'dim-Door"), as they had before January 2001.
 
 ## Credit
 

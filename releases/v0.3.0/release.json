@@ -1,0 +1,54 @@
+{
+  "asset_target": {
+    "adapter": "yanshi-cells-v1",
+    "dats": {
+      "cell.dat": {
+        "capture": "1999-10-09",
+        "iteration": 67,
+        "sha256": "111855655c7b1daec563a96476e29cf10f17a8252a50f6102f1245146e0870b8"
+      },
+      "portal.dat": {
+        "capture": "1999-10-31",
+        "iteration": 105,
+        "sha256": "778f8d927d4fb82fc69bf03e06576a04fff3529d610a08debc0b863abddf80ff"
+      }
+    },
+    "name": "launch",
+    "world": "launch-world-v2"
+  },
+  "converter": {
+    "cargo_lock_sha256": "382d5df727e3ba7ff50bb7ef3204b78d432e7c7d788947c9d932a9701d2f867e",
+    "commit": "5ffc4b620f67931a189cf4d27e0d215d6beb09b8",
+    "toolchain": "rustc 1.98.0 (88d9e12ae 2026-08-18)",
+    "version": "0.3.11"
+  },
+  "era": "launch",
+  "files": [
+    {
+      "name": "empyrean-world-launch-3c564fdf.zip",
+      "sha256": "fe0bc761757719f216620e4a4c467530189cab93d530c724f02bc78a14b0ea00",
+      "size": 9107788
+    },
+    {
+      "name": "empyrean-world-launch-3c564fdf-source.zip",
+      "sha256": "95fb925da57ce06807675b572c7fb19d6962855c76671f545b3bd9cb5a11bf70",
+      "size": 28061445
+    }
+  ],
+  "name": "empyrean-world-launch",
+  "published": false,
+  "rebuild": "empyrean-import ac1999 --revision 3c564fdf96ce49b661597ef0326c05cf5c25e00d --source empyrean-world-launch-3c564fdf-source.zip --allow-incomplete --out <new-directory>",
+  "source": {
+    "revision": "3c564fdf96ce49b661597ef0326c05cf5c25e00d",
+    "url": "https://gitlab.com/adamplumb/ac1999.git"
+  },
+  "world_pack_sha256": "797412f688bb63fbae3c198febe3bdadacf052d7f6ae5a6abe686377bdd547ae",
+  "zip": {
+    "level": 6,
+    "method": "deflate",
+    "mode": "0644",
+    "order": "path bytes",
+    "timestamp": "2000-01-01T00:00:00",
+    "writer": "zip 8.6.0, flate2 1.1.10, zlib-rs 0.6.7"
+  }
+}
