@@ -1,18 +1,18 @@
 # The inputs of the next release. Change one and the release's bytes change, so bump the version.
 
 name = "empyrean-world-launch"
-version = "0.3.0"
+version = "0.4.0"
 era = "launch"
 target = "launch"
 
 [source]
 url = "https://gitlab.com/adamplumb/ac1999.git"
-revision = "3c564fdf96ce49b661597ef0326c05cf5c25e00d"
+revision = "ee3a6833292947fb32b2afb917257fcafea7d030"
 
 [converter]
 url = "https://github.com/dereth-network/dereth"
-commit = "5ffc4b620f67931a189cf4d27e0d215d6beb09b8"
-cargo_lock_sha256 = "382d5df727e3ba7ff50bb7ef3204b78d432e7c7d788947c9d932a9701d2f867e"
+commit = "9d4a6ac1f7a51eaf0dc2b6d0b8254349cac808e4"
+cargo_lock_sha256 = "86bd306149b270c510966a0ab639502aca73617667a02600212181aa91b8c4b0"
 toolchain = "rustc 1.98.0 (88d9e12ae 2026-08-18)"
 
 [dats.portal]

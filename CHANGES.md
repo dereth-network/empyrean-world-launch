@@ -1,5 +1,10 @@
 # Changes
 
+## 0.4.0 (2026-11-16)
+
+- Follows ac1999 to `ee3a6833`: looted armor takes more varied colors, dinnerware is valuables loot in
+  materials instead of a thrown weapon, and lower-level creatures drop less.
+
 ## 0.3.0 (2026-11-08)
 
 - Follows ac1999 to `3c564fdf`: doors carry their heritage names again, such as "Aluvian-Door".
