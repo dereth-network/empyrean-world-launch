@@ -9,7 +9,7 @@ the changes it makes are ours; the world is theirs. See [NOTICE](NOTICE) and [PR
 
 ## What you need
 
-- **Empyrean 0.3.15 and Dereth 0.4.13, or later.** Earlier servers refuse this world, and earlier clients
+- **Empyrean 0.3.16 and Dereth 0.4.13, or later.** Earlier servers refuse this world, and earlier clients
   play the wrong era over the wrong files.
 - **The 1999 data files, which this repository never carries:** the `portal.dat` of October 31, 1999
   (iteration 105) and the retail CD's `cell.dat` of October 9, 1999 (iteration 67). `release.json` lists
@@ -48,13 +48,13 @@ Dereth plays them beside a modern install's `client_*.dat` files, which draw its
 With the pinned converter (`release.toml`) built, either fetch the source:
 
 ```text
-empyrean-import ac1999 --revision ee3a6833292947fb32b2afb917257fcafea7d030 --allow-incomplete --out <new-directory>
+empyrean-import ac1999 --revision 183e74f8de7975c4c8b0b46443575df9fabf5e34 --allow-incomplete --out <new-directory>
 ```
 
 or rebuild from a release's source ZIP, offline:
 
 ```text
-empyrean-import ac1999 --revision ee3a6833292947fb32b2afb917257fcafea7d030 --source empyrean-world-launch-ee3a6833-source.zip --allow-incomplete --out <new-directory>
+empyrean-import ac1999 --revision 183e74f8de7975c4c8b0b46443575df9fabf5e34 --source empyrean-world-launch-183e74f8-source.zip --allow-incomplete --out <new-directory>
 empyrean-import ac1999 package --bundle <new-directory> --out <release-directory>
 ```
 

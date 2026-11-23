@@ -1,5 +1,11 @@
 # Changes
 
+## 0.5.0 (2026-11-23)
+
+- Follows ac1999 to `183e74f8`: town portals carry their old names and colors, landscape spawns move
+  (Shadow Wisps back, Drudge Robbers off, Virindi and Obsidian Golems to the Obsidian Plains), creatures
+  drop more loot, and Fort Tethana's, Wai Jhou's and Arwic's people and animals are put right.
+
 ## 0.4.0 (2026-11-16)
 
 - Follows ac1999 to `ee3a6833`: looted armor takes more varied colors, dinnerware is valuables loot in
