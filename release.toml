@@ -11,9 +11,13 @@ revision = "183e74f8de7975c4c8b0b46443575df9fabf5e34"
 
 [converter]
 url = "https://github.com/dereth-network/dereth"
-commit = "a9fca7815212a5a31701e46ba7cbcdd83b25a4cd"
-cargo_lock_sha256 = "93f472b9261b418d7b0556786d420f3af814db88d2510d55f312ce74ab976544"
+commit = "dcbf0c30f0a3ad7e07d4142c87be0d66949a18e6"
+cargo_lock_sha256 = "bdf3b7d305e88905a9ca0c87e23d55b2ad545028877513cb3abd55e421c43f82"
 toolchain = "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+
+[pack]
+# What the pack must hash to. A release whose pack differs is refused: change this only on purpose.
+sha256 = "448afe18a077a531c3648d329350ae919b33da0c6fee472876bc56c97707a60b"
 
 [dats.portal]
 capture = "1999-10-31"

@@ -9,7 +9,7 @@ the changes it makes are ours; the world is theirs. See [NOTICE](NOTICE) and [PR
 
 ## What you need
 
-- **Empyrean 0.3.16 and Dereth 0.4.13, or later.** Earlier servers refuse this world, and earlier clients
+- **Empyrean 0.3.18 and Dereth 0.4.22, or later.** Earlier servers refuse this world, and earlier clients
   play the wrong era over the wrong files.
 - **The 1999 data files, which this repository never carries:** the `portal.dat` of October 31, 1999
   (iteration 105) and the retail CD's `cell.dat` of October 9, 1999 (iteration 67). `release.json` lists

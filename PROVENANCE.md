@@ -34,8 +34,7 @@ looted or started with can reach is present in the two 1999 files.
 | 0.1.0 | `80adf514` | `cd2eecd6c` | `b7316cba19d3a7e2fd8365a0f1b421525ecbf10f879cab6e25c0d994ccff5195` |
 | 0.2.0 | `e4eb0378` | `db116d575` | `29cd02c921cf2aebc13e6ddaa2ef82718c65eed106ee6ac90b1abc309a9e6902` |
 | 0.3.0 | `3c564fdf` | `5ffc4b620` | `797412f688bb63fbae3c198febe3bdadacf052d7f6ae5a6abe686377bdd547ae` |
-| 0.4.0 | `ee3a6833` | `9d4a6ac1f` | `d532c3d518ccbced0c51190350ccfc72e26fa2fbbc7d1807b4f50a98d37eb615` |
-| 0.5.0 | `183e74f8` | `a9fca7815` | `448afe18a077a531c3648d329350ae919b33da0c6fee472876bc56c97707a60b` |
+| 0.5.0 | `183e74f8` | `dcbf0c30f` | `448afe18a077a531c3648d329350ae919b33da0c6fee472876bc56c97707a60b` |
 
 The conversion made the same changes for each, in the same counts. What differs between them is ac1999's:
 its commits `e89544d6` (Lich's Place) and `a7c2bd76` (Shadows off the landscape). 0.2.0 no longer holds the
@@ -45,16 +44,16 @@ and 61517.
 0.3.0 differs from 0.2.0 only by ac1999's `8a570d06`: 28 door weenies take their heritage names again
 ("Aluvian-Door", "Sho-Door", "Gharun'dim-Door"), as they had before January 2001.
 
-0.4.0 differs from 0.3.0 by ac1999's loot work of November 16, 2026. Its loot tables and generator moved
-together, so this release needs the converter and the Empyrean that port its loot again: a new material
+0.5.0 differs from 0.3.0 first by ac1999's loot work of November 16, 2026 (`ee3a6833`, prepared as 0.4.0
+and never released). Its loot tables and generator moved together, so this release needs the converter and the Empyrean that port its loot again: a new material
 color table (`01f8540c`, `f07ca20b`), creature treasure tuned down (`5201b6e5`: 186 treasure rows and the
 lower tiers' spell chances), Quilted Drawers out of the loot (`79fae425`), and dinnerware as valuables loot
 in materials instead of a thrown weapon (`f5739f26`, `ba42d77b`: 12 weenies, the loot pools, and Rushiya
 bint Anruq's shop). Four weenies, the Heaume, Quilted Drawers, Leggings and Boots, now take a material and
 its colors.
 
-0.5.0 differs from 0.4.0 by ac1999's world work of November 17 to 23, 2026, all of it content; the loot
-generator is unchanged. Twenty portals are "Arwic Portal" again rather than "Portal to Arwic", with
+Then by ac1999's world work of November 17 to 23, 2026, all of it content; the loot generator is
+unchanged there. Twenty portals are "Arwic Portal" again rather than "Portal to Arwic", with
 their descriptions gone and five of them pink (`3d99d140`). The landscape's spawns move: Shadow Wisps back
 (`7b165ef4`, generator 61517 returns), Drudge Robbers only where they stand placed (`ec883290`, generators
 61106 and 61408 gone), Mire Phyntos Wasps over more tiers (`4fd5fae8`), Virindi and Obsidian Golems to the
