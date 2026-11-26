@@ -1,13 +1,13 @@
 # The inputs of the next release. Change one and the release's bytes change, so bump the version.
 
 name = "empyrean-world-launch"
-version = "0.5.0"
+version = "0.6.0"
 era = "launch"
 target = "launch"
 
 [source]
 url = "https://gitlab.com/adamplumb/ac1999.git"
-revision = "183e74f8de7975c4c8b0b46443575df9fabf5e34"
+revision = "b25a9e0a4d41118b88c0ef1c1973b78ea69e159b"
 
 [converter]
 url = "https://github.com/dereth-network/dereth"
@@ -17,7 +17,7 @@ toolchain = "rustc 1.98.0 (88d9e12ae 2026-08-18)"
 
 [pack]
 # What the pack must hash to. A release whose pack differs is refused: change this only on purpose.
-sha256 = "448afe18a077a531c3648d329350ae919b33da0c6fee472876bc56c97707a60b"
+sha256 = "cdc44e3e7e298ab555c504a31963417b068d390085b160df66ad80906345f240"
 
 [dats.portal]
 capture = "1999-10-31"

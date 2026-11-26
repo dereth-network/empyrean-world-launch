@@ -1,5 +1,11 @@
 # Changes
 
+## 0.6.0 (2026-11-26)
+
+- Follows ac1999 to `b25a9e0a`: the landscape's spawns are redrawn by biome and moved onto spots the 1999
+  land can use, towns away from the starter towns hold only harmless creatures, a score of casters get
+  their spellbooks, and the Candeth Keep placements go.
+
 ## 0.5.0 (2026-11-23)
 
 - Follows ac1999 to `183e74f8`: town portals carry their old names and colors, landscape spawns move

@@ -35,6 +35,7 @@ looted or started with can reach is present in the two 1999 files.
 | 0.2.0 | `e4eb0378` | `db116d575` | `29cd02c921cf2aebc13e6ddaa2ef82718c65eed106ee6ac90b1abc309a9e6902` |
 | 0.3.0 | `3c564fdf` | `5ffc4b620` | `797412f688bb63fbae3c198febe3bdadacf052d7f6ae5a6abe686377bdd547ae` |
 | 0.5.0 | `183e74f8` | `dcbf0c30f` | `448afe18a077a531c3648d329350ae919b33da0c6fee472876bc56c97707a60b` |
+| 0.6.0 | `b25a9e0a` | `dcbf0c30f` | `cdc44e3e7e298ab555c504a31963417b068d390085b160df66ad80906345f240` |
 
 The conversion made the same changes for each, in the same counts. What differs between them is ac1999's:
 its commits `e89544d6` (Lich's Place) and `a7c2bd76` (Shadows off the landscape). 0.2.0 no longer holds the
@@ -63,6 +64,20 @@ leave the loot (`183e74f8`). The Auroch Horn Spear has its release stats (`fef57
 spells (`c63746a4`), Fort Tethana's three vendors their stock (`785354e6`, `06a08f6a`), the Sho armorers
 their Pauldrons (`d655fa8f`); Ximi Nu and Kan Chi Gai stand in Wai Jhou again (`2423c66d`) and Arwic's pens
 hold cow generators (`33a2f18e`, `df03fd47`).
+
+0.6.0 differs from 0.5.0 by ac1999's world work of November 23 to 26, 2026, all of it content, with the same
+converter; the loot generator and its tables are unchanged. The landscape's encounter tables are redrawn
+across 18,172 landblocks: rows moved to the spots the 1999 land's scenes can spawn on (`78cfbf3e`), harmless
+creatures only around the towns that aren't starter towns (`32c1ce11`), and the biomes split into Northern
+and Southern Mountains and Freshwater and Shore (`e5d2e6f5`, `b25a9e0a`: 9 new mix generators, 17 old ones
+gone over the range, 61041 reused). Creatures move with them, by biome and tier: Phyntos Wasps, Silver Rats, Mosswarts,
+Wild Monougas, Tuskers, Skeletons, Wisps, Zofrit Zefirs, Gromnies and Golems (`afbb13a2` to `ec191094`, 53
+mix generators retuned); Sewer Rat generators give way to Swamp Rats (`a6c17e34`, 7158 and 9271 gone),
+Copper Golems take camps (`ec191094`, generator 4343), Fire Elemental generators spawn more (`b37acc79`).
+Twenty-three casters, among them the Virindi Master and Director, the K'nath, the Fire Elementals and the
+Tumerok, get spellbooks from the 2001 tables (`8628d423`). The post-release placements near Candeth Keep
+leave (`f6472730`: six landblocks and generator 1969), and Asheron's and the Empyrean Jumpsuit return
+(`26741c48`).
 
 ## Credit
 

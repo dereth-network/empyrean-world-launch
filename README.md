@@ -48,13 +48,13 @@ Dereth plays them beside a modern install's `client_*.dat` files, which draw its
 With the pinned converter (`release.toml`) built, either fetch the source:
 
 ```text
-empyrean-import ac1999 --revision 183e74f8de7975c4c8b0b46443575df9fabf5e34 --allow-incomplete --out <new-directory>
+empyrean-import ac1999 --revision b25a9e0a4d41118b88c0ef1c1973b78ea69e159b --allow-incomplete --out <new-directory>
 ```
 
 or rebuild from a release's source ZIP, offline:
 
 ```text
-empyrean-import ac1999 --revision 183e74f8de7975c4c8b0b46443575df9fabf5e34 --source empyrean-world-launch-183e74f8-source.zip --allow-incomplete --out <new-directory>
+empyrean-import ac1999 --revision b25a9e0a4d41118b88c0ef1c1973b78ea69e159b --source empyrean-world-launch-b25a9e0a-source.zip --allow-incomplete --out <new-directory>
 empyrean-import ac1999 package --bundle <new-directory> --out <release-directory>
 ```
 
